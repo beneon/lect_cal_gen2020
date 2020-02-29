@@ -1,0 +1,95 @@
+title: SPSS软件应用训练
+curriculum_type: 2017版口腔专业教学大纲
+text_book: 医学统计学与SPSS软件实现方法
+teachers:
+  - teacher:
+      name: 郑骏明
+      title: 讲师
+course_detail:
+  - session:
+      type: experiment
+      title: 医学统计学基本概念与软件使用
+      teacher: 郑骏明
+      class_span: 2
+      content:
+        - 统计资料的类型
+        - 结合实例，讨论总体，个体，样本，变异，变量，统计量，参数等概念
+        - 演示统计工作的步骤
+        - 演示常用统计作图
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 数值变量的统计描述与正态分布
+      content:
+        - 演示中央极限定理
+        - 演示描述性统计在SPSS中的操作
+        - 演示频数表与直方图的编制
+        - 演示算术均数、几何均数、中位数的计算
+        - 演示标准差的计算
+        - 演示正态分布面积分布的规律和应用
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 计量资料的统计推断及抽样试验
+      content:
+        -  演示置信区间的意义以及计算方法
+        -  演示假设检验的基本步骤，讲解其基本思想
+        -  演示总体均值t检验，非配对t检验以及配对t检验的意义以及操作方式
+        -  指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 方差分析与分类资料的统计描述
+      content:
+        - 演示方差分析的意义，尤其是Sb与Sw的意义
+        - 演示方差分析的计算方式
+        - 演示Post hoc的操作方式以及结果的判读方式
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 分类变量资料的统计推断
+      content:
+        - 讲解自由度的概念，并对其进行演示
+        - 讲解四格表，以及各项的计算
+        - 讲解χ2检验的基本思想，进行演示
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 分类变量资料的统计推断
+      content:
+        - 讲解非参数检验的基本概念
+        - 演示各种秩和检验的编秩方法，以及具体程序化操作
+        - 讲解各种只和检验中的统计量
+        - 演示秩和检验与t检验的比较
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 直线相关与回归
+      content:
+        - 讲解最小二乘原理
+        - 讲解线性回归中相关统计量
+        - 演示自变量与因变量量纲变化对结果的影响
+        - 指导学生开展实际操作
+  - session:
+      type: experiment
+      teacher: 郑骏明
+      class_span: 2
+      title: 医学科研数据分析
+      content:
+        - 对提供的数据集做初步讲解
+        - 引导学生对数据集做探索性分析
+        - 指导学生开展实际操作，编制统计报告
+references:
+  - 郭秀花．医学统计学与SPSS软件实现方法．北京：北京科学出版社，2012.6
+  - 方积乾．医学统计学与电脑实验．上海：上海科学技术出版社，2010.8
