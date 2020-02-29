@@ -9,7 +9,7 @@ from yaml import full_load
 # alert logger现在放在Cleaner 类的外面了，但是还是要在Cleaner里面去引用这货……
 alert_logger = {'授课时间与放假冲突警告':[],'年级班级信息特殊格式':[],'课程信息特殊格式':[]}
 # 读取课程表文件，将各个sheet按照sheetname转换成若干个df的dict
-xl_path = '附件1：2019-2020学年第2学期口腔医学院专业课程表（定稿）.xls'
+xl_path = 'datafile/附件1：2019-2020学年第2学期口腔医学院专业课程表（定稿）.xls'
 
 xlFile = pd.ExcelFile(xl_path)
 xl_df_col = xlFile.sheet_names
@@ -292,7 +292,7 @@ xl_df_processed_col = {}
 for k in xl_df_col.keys():
     xl_df_processed_col[k] = DataFrameCleaner(xl_df_col[k],xl_df_aux_col[k])
 
-xl_writer = pd.ExcelWriter('整理后excel.xlsx',engine='xlsxwriter')
+xl_writer = pd.ExcelWriter('datafile/整理后excel.xlsx', engine='xlsxwriter')
 for k,v in xl_df_processed_col.items():
     v.rst_df.to_excel(xl_writer,sheet_name=k,index=False)
     memo = v.memo
@@ -313,7 +313,7 @@ xl_writer.save()
 
 # 输出负责人中包含我自己的课程
 
-xl_writer = pd.ExcelWriter('郑骏明负责课程.xlsx',engine='xlsxwriter')
+xl_writer = pd.ExcelWriter('datafile/郑骏明负责课程.xlsx', engine='xlsxwriter')
 for k,v in xl_df_processed_col.items():
     df = v.rst_df
     df = df[df['负责人'].str.find('郑骏明')>=0]
